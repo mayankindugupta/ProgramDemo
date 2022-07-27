@@ -6,8 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HelloSelenium {
 	
@@ -15,10 +16,10 @@ public class HelloSelenium {
 	
     public static void main(String[] args) {
     	
-    	//System.setProperty("webdriver.chrome.driver","/Users/mayank.gupta/practiceProgramDemo/src/test/resources/chromedriver");
-       // driver = new ChromeDriver();
-    	System.setProperty("webdriver.gecko.driver","/Users/mayank.gupta/practiceProgramDemo/src/test/resources/geckodriver" );  
-        driver = new FirefoxDriver();
+    	System.setProperty("webdriver.chrome.driver","/Users/mayank.gupta/Downloads/chromedriver");
+        driver = new ChromeDriver();
+    	//System.setProperty("webdriver.gecko.driver","/Users/mayank.gupta/practiceProgramDemo/src/test/resources/geckodriver" );  
+        //driver = new FirefoxDriver();
 
         driver.get("https://google.com");
         

@@ -11,15 +11,15 @@ public class PrimeNumberWithCount {
 
 	       for (i = 1; i <= 100; i++)         
 	       { 		  	  
-	          int temp=0; 	  
+	          int count=0; 	  
 	          for(num =i; num>=1; num--)
 		  {
 	             if(i%num==0)
 		     {
-	            	 temp = temp + 1;
+	            	 count = count + 1;
 		     }
 		  }
-		  if (temp ==2)
+		  if (count ==2)
 		  {
 		     //Appended the Prime number to the String
 			  pNum = pNum + i + " ";
