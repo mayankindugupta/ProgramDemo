@@ -42,10 +42,10 @@ public class SplitLinkedList {
 		
 		int midpnt=(size)/2;
 		
-		System.out.println("\n"+"Mid Point of Linked List: "+midpnt);
+		System.out.println("\nMid Point of Linked List: "+midpnt);
 		
 		Node temp = first;
-		System.out.print("First Half:");
+		System.out.print("\nFirst Half:");
 		while(midpnt>0)
 		{
 			System.out.print(temp.data+" ");
@@ -63,7 +63,7 @@ public class SplitLinkedList {
 		
 		boolean isCompare=compareMethod(one,temp);
 		if(isCompare) {
-			System.out.println("\n"+"Hey Both the Linked List are Equal");
+			System.out.println("\nHey Both the Linked List are Equal");
 		}
 		else
 		{

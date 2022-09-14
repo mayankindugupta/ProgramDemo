@@ -1,5 +1,9 @@
 package TestStrings;
 
+/*1. By reverse input str and compare
+2. compare 1st element to last element and so on
+3. by mid point theory where L&R will be start from mid point*/
+
 public class PalindromeArray {
 
 	static void palindrome(int arr[], int n)

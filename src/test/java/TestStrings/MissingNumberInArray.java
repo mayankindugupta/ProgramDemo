@@ -2,26 +2,26 @@ package TestStrings;
 
 import java.util.Arrays;
 
-public class TestCode {
+public class MissingNumberInArray {
 
-	int returnVal(int[] A) {
-		Arrays.sort(A);
+	int returnVal(int[] arr) {
+		Arrays.sort(arr);
 		int getVal = -1;
-		int lastVal = A[A.length-1];
+		int lastVal = arr[arr.length-1];
 		System.out.print("Sorted Array:");
-		for (int i = 0; i < A.length; i++) {
-			System.out.print(A[i]+" ");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]+" ");
 		}
 		System.out.println();
-		if(A[A.length - 1]<0)
+		if(arr[arr.length - 1]<0)
 		{
 			getVal= 1;
 		}
 		else
 		{
-		for (int i = 0; i < A.length - 1; i++) {
-			if (!(A[i + 1] - A[i] <= 1)) {
-				getVal = A[i] + 1;
+		for (int i = 0; i < arr.length - 1; i++) {
+			if (!(arr[i + 1] - arr[i] <= 1)) {
+				getVal = arr[i] + 1;
 			}	
 		}
 		}
@@ -34,7 +34,7 @@ public class TestCode {
 
 	public static void main(String[] args) {
 
-		TestCode obj = new TestCode();
+		MissingNumberInArray obj = new MissingNumberInArray();
 		int[] Arr1 = { 1, 2, 3 };
 		int[] Arr2 = {1, 3, 6, 4, 1, 2};
 		int[] Arr3 = {-1, -3};
